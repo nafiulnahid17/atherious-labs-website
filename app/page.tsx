@@ -223,4 +223,45 @@ export default function Home() {
             <span className="kicker">Founder Details</span>
             <h2>Md. Nahid Alom</h2>
             <h3>Founder & Director</h3>
-            <p>AI resea
+            <p>AI researcher, legal-tech entrepreneur and inventor leading Atherious Labs and its portfolio of intelligent product ventures.</p>
+            <blockquote>“Build technology that creates meaningful opportunity, not just novelty.”</blockquote>
+            <a href="https://linkedin.com/in/nafiul-al-nahid" target="_blank" rel="noreferrer" className="textButton darkTextButton"><Linkedin size={16} /> Founder LinkedIn</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="board" className="sectionShell boardSection">
+        <div className="container">
+          <div className="sectionHead">
+            <div><span className="kicker">Board Members</span><h2>Leadership structure.</h2></div>
+            <p>Five board positions are prepared for final approved profiles. No placeholder identities are published.</p>
+          </div>
+          <div className="boardGrid">
+            {boardSlots.map((member) => <article className="boardCard" key={member.id}>
+              <div className="avatarPlaceholder"><Users size={28} /><span>{String(member.id).padStart(2, "0")}</span></div>
+              <h3>{member.title}</h3><strong>{member.role}</strong><p>{member.desc}</p>
+            </article>)}
+          </div>
+        </div>
+      </section>
+
+      <section className="sectionShell teamSection">
+        <div className="container">
+          <div className="sectionHead"><div><span className="kicker">Employees</span><h2>Built by focused teams.</h2></div><p>A flexible team structure designed around product, engineering, research and operations.</p></div>
+          <div className="teamGrid">
+            {["Product Team", "Engineering Team", "Research Team", "Operations Team"].map((team, i) => <article key={team} className="teamCard"><span>0{i + 1}</span><h3>{team}</h3><p>{["Turns product ideas into clear user experiences.", "Builds reliable systems and production software.", "Explores AI, legal-tech and applied innovation.", "Keeps projects, partners and delivery moving."][i]}</p></article>)}
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <div className="container footerGrid">
+          <div><Logo /><p>Ideas. Products. People. A smarter tomorrow.</p></div>
+          <div className="footerLinks"><a href="#products">Products</a><a href="#services">Services</a><a href="#founder">Founder</a><a href="#board">Board</a></div>
+          <div className="footerContact"><a href="mailto:nafiulalnahid@gmail.com"><Mail size={16} /> Email</a><a href="https://linkedin.com/in/nafiul-al-nahid" target="_blank" rel="noreferrer"><Linkedin size={16} /> LinkedIn</a></div>
+        </div>
+        <div className="container copyright">© {new Date().getFullYear()} Atherious Labs. All rights reserved.</div>
+      </footer>
+    </main>
+  );
+}
