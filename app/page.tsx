@@ -97,4 +97,60 @@ export default function Home() {
         <div className="heroNoise" />
         <div className="container heroGrid">
           <div className="heroCopy reveal">
-            <div className="eyebrow"><Spark
+            <div className="eyebrow"><Sparkles size={14} /> Innovation beyond borders</div>
+            <h1>Building the Future Through <span>Intelligent Products.</span></h1>
+            <p>Atherious Labs is an innovation lab and parent company building AI systems, legal-tech platforms, creative tools and smart digital ventures.</p>
+            <div className="heroActions">
+              <a className="button primary" href="#products">Explore Products <ArrowRight size={17} /></a>
+              <a className="button secondary" href="#contact">Contact Us <ChevronRight size={17} /></a>
+            </div>
+            <div className="heroStats">
+              <div><strong>AI</strong><span>Product Focus</span></div>
+              <div><strong>Legal-Tech</strong><span>Core Expertise</span></div>
+              <div><strong>Creative</strong><span>Production Systems</span></div>
+              <div><strong>Global</strong><span>Vision & Impact</span></div>
+            </div>
+          </div>
+
+          <div className="heroStage" aria-hidden="true">
+            <div className="world">
+              <div className="worldCore"><span /></div>
+              <div className="orbit orbit1" />
+              <div className="orbit orbit2" />
+              <div className="orbit orbit3" />
+            </div>
+            <div className="stageCard stageTop"><Bot size={18} /><span>AI Systems</span></div>
+            <div className="stageCard stageBottom"><ShieldCheck size={18} /><span>Trusted Products</span></div>
+            <div className="stageGrid" />
+          </div>
+        </div>
+      </section>
+
+      <section id="products" className="darkSection sectionShell">
+        <div className="container">
+          <div className="sectionHead lightHead">
+            <div><span className="kicker">Our Flagship Products</span><h2>Built for real-world impact.</h2></div>
+            <p>Highlighted products combining intelligent software, thoughtful design and practical workflows.</p>
+          </div>
+
+          <div className="flagshipGrid">
+            <article className="flagshipCard legalCard">
+              <div className="productText">
+                <div className="productTopline"><span className="productIcon"><Scale /></span><span className="status live">Live Product</span></div>
+                <h3>LexGlobal BD</h3>
+                <p>Bangladesh-first AI-powered legal ecosystem designed to make legal information and workflows more accessible.</p>
+                <ul>
+                  <li>AI-powered legal assistance</li><li>Legal research & documents</li><li>Case analysis and smart workflows</li><li>Tools for people, students and professionals</li>
+                </ul>
+                <a href="https://lexglobalbd.live/" target="_blank" rel="noreferrer" className="textButton">Visit LexGlobal BD <ArrowRight size={16} /></a>
+              </div>
+              <ProductVisual legal />
+            </article>
+
+            <article className="flagshipCard vectorCard">
+              <div className="productText">
+                <div className="productTopline"><span className="productIcon"><WandSparkles /></span><span className="status live">Core Product</span></div>
+                <h3>ReVector AI</h3>
+                <p>An advanced image-to-vector workflow focused on production-ready, editable outputs for professional creative work.</p>
+                <ul>
+                  <li>Image analysis and part detection</li><li>Vectorization pipeline</li><li>Editable production outputs</li><li>Validation-first workflo
