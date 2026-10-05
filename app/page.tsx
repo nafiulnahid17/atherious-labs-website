@@ -153,4 +153,74 @@ export default function Home() {
                 <h3>ReVector AI</h3>
                 <p>An advanced image-to-vector workflow focused on production-ready, editable outputs for professional creative work.</p>
                 <ul>
-                  <li>Image analysis and part detection</li><li>Vectorization pipeline</li><li>Editable production outputs</li><li>Validation-first workflo
+                  <li>Image analysis and part detection</li><li>Vectorization pipeline</li><li>Editable production outputs</li><li>Validation-first workflow</li>
+                </ul>
+                <a href="#contact" className="textButton">Explore ReVector AI <ArrowRight size={16} /></a>
+              </div>
+              <ProductVisual />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="sectionShell softSection">
+        <div className="container">
+          <div className="sectionHead">
+            <div><span className="kicker">Coming Soon</span><h2>The next wave of products.</h2></div>
+            <p>New systems from Atherious Labs are being developed across production, legal productivity and general AI.</p>
+          </div>
+          <div className="comingGrid">
+            {comingSoon.map((item) => {
+              const Icon = item.icon;
+              return <article className="comingCard" key={item.name}>
+                <div className="comingIcon"><Icon /></div><span className="status">{item.tag}</span><h3>{item.name}</h3><p>{item.desc}</p><div className="miniLine" />
+              </article>;
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="sectionShell whiteSection">
+        <div className="container">
+          <div className="sectionHead">
+            <div><span className="kicker">Services We Provide</span><h2>From idea to intelligent product.</h2></div>
+            <p>End-to-end technology and product services for businesses, founders and organizations.</p>
+          </div>
+          <div className="servicesGrid">
+            {services.map(({ icon: Icon, title, desc }) => <article className="serviceCard" key={title}><span><Icon /></span><h3>{title}</h3><p>{desc}</p></article>)}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="ctaBand sectionShell">
+        <div className="container ctaGrid">
+          <div>
+            <span className="kicker kickerLight">Let&apos;s build together</span>
+            <h2>Ready to Build Something Extraordinary?</h2>
+            <p>Partner with Atherious Labs to turn ambitious ideas into intelligent, usable products.</p>
+          </div>
+          <div className="contactActions">
+            <a className="button primary orderButton" href="mailto:nafiulalnahid@gmail.com?subject=Atherious%20Labs%20Project%20Order">Order Now <ArrowRight size={17} /></a>
+            <a className="button glassButton" href="mailto:nafiulalnahid@gmail.com"><Mail size={17} /> Email</a>
+            <div className="socials" aria-label="Social contact options">
+              <a href="https://linkedin.com/in/nafiul-al-nahid" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin /></a>
+              <a href="#contact" aria-label="Facebook"><Facebook /></a>
+              <a href="#contact" aria-label="Instagram"><Instagram /></a>
+              <a href="#contact" aria-label="WhatsApp"><MessageCircle /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="founder" className="sectionShell founderSection">
+        <div className="container founderGrid">
+          <div className="founderPortrait">
+            <div className="portraitGlow" />
+            <div className="portraitMonogram">NA</div>
+            <div className="portraitBadge"><Sparkles size={15} /> Founder</div>
+          </div>
+          <div className="founderCopy">
+            <span className="kicker">Founder Details</span>
+            <h2>Md. Nahid Alom</h2>
+            <h3>Founder & Director</h3>
+            <p>AI resea
