@@ -2,6 +2,11 @@
 
 Premium one-page corporate website for Atherious Labs.
 
+## Live Production
+- Website: https://atheriouslabs.com
+- Cloudflare Pages project: `atherious-labs-website`
+- Production branch: `main`
+
 ## Stack
 - Next.js
 - React
@@ -28,10 +33,29 @@ npm run dev
 
 Open http://localhost:3000
 
-## Production
+## Production build
+The site uses Next.js static export for Cloudflare Pages.
+
 ```bash
+npm install
 npm run build
-npm start
+```
+
+The generated production site is written to:
+
+```text
+out/
+```
+
+## Deploy to Cloudflare Pages from CMD
+```bash
+npx -y wrangler@4.147.0 pages deploy out --project-name=atherious-labs-website --branch=main
+```
+
+Custom domain:
+
+```text
+atheriouslabs.com
 ```
 
 ### Content note
