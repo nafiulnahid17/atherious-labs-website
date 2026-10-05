@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "worker:dev": "npm run build && wrangler dev",
+    "worker:deploy": "npm run build && wrangler deploy",
+    "worker:tail": "wrangler tail"
   },
   "dependencies": {
     "@types/node": "^22.10.0",
@@ -17,5 +20,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.46.0"
   }
 }
