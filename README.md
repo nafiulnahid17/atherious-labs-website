@@ -1,62 +1,33 @@
-# Atherious Labs Website
+# Atherious Labs
 
-Premium one-page corporate website for Atherious Labs.
+A responsive Next.js website based on the approved Intelligent Futures mockup. The dark navy and gold design uses separate generated artwork assets and editable HTML text, cards, navigation and forms.
 
-## Live Production
-- Website: https://atheriouslabs.com
-- Cloudflare Pages project: `atherious-labs-website`
-- Production branch: `main`
+## Run
 
-## Stack
-- Next.js
-- React
-- TypeScript
-- Lucide icons
-- Custom responsive CSS
-
-## Sections
-- Hero
-- Flagship Products: LexGlobal BD, ReVector AI
-- Coming Soon: Jersey OS, LexWork, Sunshot AI
-- Services
-- Order / contact CTA with email and social options
-- Founder: Md. Nahid Alom — Founder & Director
-- 5 board-member slots (intentionally no fake identities)
-- Team / employees
-- Footer and contact actions
-
-## Run locally
 ```bash
-npm install
+npm ci
 npm run dev
-```
-
-Open http://localhost:3000
-
-## Production build
-The site uses Next.js static export for Cloudflare Pages.
-
-```bash
-npm install
 npm run build
 ```
 
-The generated production site is written to:
+## Cloudflare Worker
 
-```text
-out/
-```
+The existing OpenNext Worker configuration is preserved. Build and deploy with:
 
-## Deploy to Cloudflare Pages from CMD
 ```bash
-npx -y wrangler@4.147.0 pages deploy out --project-name=atherious-labs-website --branch=main
+npm run cf:build
+npm run cf:deploy
 ```
 
-Custom domain:
+## Content and interactions
 
-```text
-atheriouslabs.com
-```
+- Projects: LexGlobal BD, JerseyOS and SunShot AI.
+- ReVector AI is a tool inside JerseyOS.
+- Founder: Nahid Alom, Founder & Director.
+- Board and team profiles remain explicitly unannounced; no fictional identities are presented as members.
+- The founder artwork is an illustrative recreation of the supplied design, not a verified photograph.
+- Contact and update requests open an email draft to contact@atheriouslabs.com. They do not claim a server-side submission or subscription.
+- Generated backgrounds contain no typography; site text remains selectable and accessible.
+- Mobile navigation, keyboard focus and reduced-motion preferences are supported.
 
-### Content note
-Board-member identities and company social handles should be replaced only with approved real details before public launch.
+Asset source and generation prompts: [ASSETS.md](ASSETS.md).
